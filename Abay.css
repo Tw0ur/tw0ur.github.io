@@ -27,17 +27,18 @@ body {
 
 /* МЕНЮ */
 
+
 .header {
   z-index: 1000;
   padding-top: 5px;
-  margin-bottom: 599px;
+  margin-bottom: 32.5%;
 }
 
 .nav {
-  margin-bottom: 305px;
+  margin-bottom: 15%;
 }
 .container-wide{
-  width: 1790px;
+  width: 90%;
   margin:0 auto;
   padding: 0 15px;
   position: absolute;
@@ -101,8 +102,9 @@ body {
 
 .hero {
   display: block;
-   margin-left: 200px;
+   margin-left: 10.5%;
    margin-right: auto;
+   width: 100%;
    max-width: 450px;
    padding-left: 15px;
    padding-right: 15px;
@@ -155,31 +157,22 @@ body {
 
 .basic {
   display: flex;
+  width: 95%;
   height: 980px;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content: center;
 }
 
 .basic-text {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
-  margin-top: 200px;
-  max-width: 850px;
+  margin-top: 11%;
+  max-width: 45%;
   text-align: center;
-  
-}
-.basic-logo {
-  position: absolute;
-  font-family: 'Good';
-  font-style: italic;
-  font-size: 60px;
-  color: #fbd784;
-  top: 1260px;
-  left: 350px;
-  letter-spacing: 10px;
 }
 .basic-text-title{
-  margin-top: 20px;
+  margin-top: 1%;
   position: relative;
   z-index: 1000;
 }
@@ -191,7 +184,12 @@ body {
 }
 
 .basic-text1 {
-  margin-bottom: 40px;
+  margin-bottom: 5%;
+}
+
+.basic-text2 {
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 .basic-now {
   display: inline-block;
@@ -211,14 +209,13 @@ body {
 }
 .basic-img{
   display: inline-block;
-  margin-left: 80px;
-  max-width: 850px;
-  
+  margin-left: 5%;
+  max-width: 45%;
+  overflow: hidden;
 }
 .basic-photo1 {
   margin-bottom: 40px;
-  width: 810px;
-   display: block;  
+  width: 810px; 
 }
 
 .basic-photo2{
@@ -257,26 +254,31 @@ body {
 
 
 .creativity {
-  margin-top: 40px;
+  margin-top: 2%;
   display: flex;
-  margin-right: 80px;
+  margin-right: 4%;
 }
 .creativity-gallery{
-  max-width: 1000px;
-
+  max-width: 55%;
+  overflow: hidden;
 }
 .cretivity-photo{
   width: 1000px;
 }
 .creativity-text {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
-  margin-top: 50px;
-  max-width: 850px;
+  margin-top: 2%;
+  max-width: 40%;
   text-align: center;
-  margin-left: 80px
+  margin-left: 4%;
 }
-
+.creativity-text h2 {
+  margin-top: 2%;
+}
+.creativity-text1 {
+  margin-top: 1%;margin-bottom: 1%;
+}
 .creativity-text1-t {
   text-decoration: none;
   color: #fbd784;
@@ -311,6 +313,7 @@ body {
 .hover-effect-scale li {
   position: relative;
   display: inline-block;
+  width: 30%;
   background-color: #fff;
   margin: 0;
   border: 5px solid #fff;
@@ -318,7 +321,7 @@ body {
   overflow: hidden;
 }
 .hover-effect-scale img {
-  width: 600px;
+  width:100%;
   
 }
 /* Заголовок, текст и ссылка */
@@ -386,15 +389,16 @@ body {
   display: flex;
   height: 980px;
   margin-top: 30px;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 4%;
+  margin-right: 4%;
+  justify-content: center;
 }
 
 .abay-text {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
-  margin-top: 200px;
-  max-width: 850px;
+  margin-top: 10%;
+  max-width: 45%;
   text-align: center;
   
 }
@@ -435,7 +439,8 @@ body {
 .abay-img{
   display: inline-block;
   margin-left: 80px;
-  max-width: 850px;
+  max-width: 45%;
+  overflow: hidden;
 }
 
 .abay-photo1 {
@@ -467,7 +472,7 @@ body {
 .end {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 80%;
   margin: 40px 20% 20% ;
   text-align: center;
   text-decoration: none;
@@ -478,19 +483,31 @@ body {
 }
 
 .contact-ct{
+  display: inline-block;
   color: yellow;
+  vertical-align: top;
+  position: relative;
   font-size: 20px;
   text-decoration: none;
   margin-left: 15px;
-  
-  
+  transition: all 0.2s ease-out; 
 }
-
+.contact-ct:hover{
+  color: white;
+}
 .contact-us{
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
   color: yellow;
   font-size: 20px;
   text-decoration: none;
   margin-right: 10px;
+  transition: all 0.2s ease-out;
+}
+
+.contact-us:hover{
+  color:white
 }
 
 .nav_the_end {
@@ -498,13 +515,22 @@ body {
   margin-left:19px ;
   text-decoration: none;
   cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.nav_the_end:hover{
+  color:#fbd784;
 }
 
 .Home {
   text-align: center;
-  line-height: 90px;
+  line-height:  90px;
   text-decoration: none;
   color: #fff;
   font-size: 30px;
   font-weight: 700;
+  transition: all 0.2s ease-out;
+}
+
+.Home:hover {
+  color: red;
 }
