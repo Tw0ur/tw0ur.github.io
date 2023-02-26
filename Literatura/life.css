@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+  margin: 0;
+  line-height: 1.6;
+  background-color: #ffffff;
+  background-image:url("/Photo/photo_1.jpeg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0);
+  
+}
+*,
+*:after
+*::before{
+ box-sizing: border-box;
+ 
+}
+
+
+/* МЕНЮ */
+
+
+.header {
+  font-family: 'Montserrat', sans-serif;
+  z-index: 1000;
+  padding-top: 5px;
+  margin-bottom: 33%;
+}
+
+
+.container-wide{
+  width: 90%;
+  margin:0 auto;
+  padding: 0 15px;
+  position: absolute;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+.logo {
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  margin-left: 40px;
+}
+
+.nav-menu {
+  font-weight: 700;
+  font-size: 22px;
+}
+.nav-menu ul {
+  display: flex;
+   margin: 0;
+   padding: 0%;
+   list-style-type: none;
+
+}
+.nav-menu li + li{
+  margin-left: 90px;
+}
+
+
+.nav-menu a {
+   color: white;
+   text-decoration: none;
+   transition: 0.2s ease-in;
+}
+.nav-menu a:hover {
+  color: #fbd784;
+}
+.account{
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  transition: 0.2s ease-in;
+}
+.account:hover {
+  color: red;
+
+}
+.hero {
+  width: 100%;
+  height: 100%;
+  margin-top: 400px;
+  text-align: center;
+  font-size: 70px;
+  color: white;
+}
+
+.content-area {
+  width: 60%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 20px;
+}
+.text {
+  display: flex;
+}
+aside {
+  margin-top: 5%;
+  width: 20%;
+}
+aside a {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(22, 22, 27);
+  transition: 0.2s linear;
+}
+aside a:hover {
+  color: crimson;
+}
+
+aside h2 a{
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  transition: 0.3s linear;
+}
+aside h2 a:hover {
+  color: #fbd784;
+}
+
+
+@media (min-width:1024px) and (max-width:1365px) {
+  .hero{
+    margin-top: 20%;
+  }
+
+  .content-area {
+    width: 55%;
+    margin-right: 10%;
+  }
+}
+@media (min-width:768px) and (max-width:1023px) {
+  .logo {
+    margin-left: 5%;
+    font-size: 22px;
+  }
+  .account {
+    font-size: 20px;
+  }
+  .nav-menu{
+    font-size: 16px;
+  }
+  .nav-menu li + li {
+    margin-left: 40px;
+  }
+  .hero{
+    margin-top: 23%;
+    font-size: 30px;
+  }
+
+  .content-area {
+    width: 80%;
+    margin-right: 10%;
+  }
+  aside {
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 0;
+  }
+  .text {
+    flex-direction: column;
+  }
+
+}
+@media (min-width:574px) and (max-width:767px) {
+  .logo {
+    margin-left: 5%;
+    font-size: 18px;
+  }
+  .account {
+    font-size: 16px;
+  }
+  .nav-menu{
+    font-size: 14px;
+  }
+  .nav-menu li + li {
+    margin-left: 30px;
+  }
+  .hero{
+    margin-top: 23%;
+    font-size: 30px;
+  }
+
+  .content-area {
+    width: 80%;
+    margin-right: 10%;
+  }
+  aside {
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 0;
+  }
+  .text {
+    flex-direction: column;
+  }
+
+}
+@media screen and (max-width:573px) {
+  .logo {
+    margin-left: 0;
+    font-size: 16px;
+  }
+  .account {
+    font-size: 12px;
+  }
+  .nav-menu{
+    font-size: 12px;
+  }
+  .nav-menu li + li {
+    margin-left: 20px;
+  }
+  .hero{
+    margin-top: 23%;
+    font-size: 20px;
+  }
+
+  .content-area {
+    width: 80%;
+    font-size: 14px;
+  }
+  aside {
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 0;
+  }
+  .text {
+    flex-direction: column;
+  }
+
+}
