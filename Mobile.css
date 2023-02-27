@@ -31,14 +31,14 @@
   .logo {
     margin-left: 5px;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
     color: white;
   }
   
   .nav-menu {
     font-weight: 700;
-    font-size: 8px;
+    font-size: 12px;
   }
   .nav-menu ul {
      display: flex;
@@ -60,9 +60,7 @@
   .nav-menu a:hover {
     color: #fbd784;
   }
-  .account{
-    font-size: 9px;
-  }
+  
   
   /* Главное */
   
@@ -489,7 +487,7 @@
   
   .nav-menu {
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
   }
   .nav-menu ul {
     display: flex;
@@ -511,9 +509,7 @@
   .nav-menu a:hover {
     color: #fbd784;
   }
-  .account{
-    font-size: 14px; ;
-  }
+ 
   
   
   /* Главное */

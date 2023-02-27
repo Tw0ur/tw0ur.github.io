@@ -7,6 +7,7 @@ body {
   background-image:url("/Photo/photo_1.jpeg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  z-index: 1;
   color: rgb(0, 0, 0);
   
 }
@@ -33,7 +34,7 @@ body {
   width: 90%;
   margin:0 auto;
   padding: 0 15px;
-  position: absolute;
+  
 }
 .header__inner {
   display: flex;
@@ -54,23 +55,14 @@ body {
   margin-left: 40px;
 }
 
-.nav-menu {
-  font-weight: 700;
-  font-size: 22px;
-}
-.nav-menu ul {
-  display: flex;
-   margin: 0;
-   padding: 0%;
-   list-style-type: none;
 
-}
 .nav-menu li + li{
   margin-left: 90px;
 }
 
 
 .nav-menu a {
+  display: inline-block;
    color: white;
    text-decoration: none;
    transition: 0.2s ease-in;
@@ -78,16 +70,25 @@ body {
 .nav-menu a:hover {
   color: #fbd784;
 }
-.account{
+.nav-menu {
+  position: relative;
+  font-weight: 700;
   font-size: 22px;
-  font-weight: 600;
-  color: white;
-  text-decoration: none;
-  transition: 0.2s ease-in;
 }
-.account:hover {
-  color: red;
+.nav-menu ul {
+  display: flex;
+   margin: 0;
+   padding: 0%;
+   list-style-type: none; 
+}
 
+
+.fa-bars{
+  display: none !important;
+  
+}
+.fa-times {
+  display: none !important;
 }
 .hero {
   width: 100%;
@@ -101,7 +102,7 @@ body {
 .content-area {
   width: 60%;
   margin-left: 10%;
-  margin-right: 10%;
+  margin-right: 5%;
   font-size: 20px;
 }
 .text {
@@ -165,9 +166,7 @@ aside h2 a:hover {
     margin-right: 10%;
   }
   aside {
-    width: 50%;
-    margin-left: 10%;
-    margin-top: 0;
+    display: none;
   }
   .text {
     flex-direction: column;
@@ -175,6 +174,52 @@ aside h2 a:hover {
 
 }
 @media (min-width:574px) and (max-width:767px) {
+  .nav-menu {
+    font-size: 12px;
+    position: relative;
+  }
+  .nav-menu ul {
+    display: flex;
+     margin: 0;
+     padding: 0%;
+     overflow: hidden;
+     opacity: 0;
+     box-shadow: -7px 9px 17px 0 #00000017;
+     width: 0;
+     align-items: center;
+     pointer-events: none;
+     list-style-type: none; 
+     transition: 0.5s ease;
+  }
+   .nav-menu.show ul {
+    width: 260px;
+    transform: translateX(-60px);
+    opacity: 1;
+    align-items: center;
+    pointer-events: all;
+   
+  } 
+  .icon {
+    position: absolute; 
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    
+    transition: 0.5s ease;
+  }
+  .fa-bars{
+    display: block !important;
+  }
+  .fa-times {
+    display: none !important;
+  }
   .logo {
     margin-left: 5%;
     font-size: 18px;
@@ -189,7 +234,7 @@ aside h2 a:hover {
     margin-left: 30px;
   }
   .hero{
-    margin-top: 23%;
+    margin-top: 18%;
     font-size: 30px;
   }
 
@@ -198,9 +243,7 @@ aside h2 a:hover {
     margin-right: 10%;
   }
   aside {
-    width: 50%;
-    margin-left: 10%;
-    margin-top: 0;
+    display: none;
   }
   .text {
     flex-direction: column;
@@ -208,21 +251,62 @@ aside h2 a:hover {
 
 }
 @media screen and (max-width:573px) {
+  .nav-menu {
+    font-size: 12px;
+    position: relative;
+  }
+  .nav-menu ul {
+    display: flex;
+     margin: 0;
+     padding: 0%;
+     overflow: hidden;
+     opacity: 0;
+     box-shadow: -7px 9px 17px 0 #00000017;
+     width: 0;
+     align-items: center;
+     pointer-events: none;
+     list-style-type: none; 
+     transition: 0.5s ease;
+  }
+   .nav-menu.show ul {
+    width: 250px;
+    transform: translateX(-60px);
+    opacity: 1;
+    align-items: center;
+    pointer-events: all;
+   
+  } 
+  .icon {
+    position: absolute; 
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    
+    transition: 0.5s ease;
+  }
+  .fa-bars{
+    display: block !important;
+  }
+  .fa-times {
+    display: none !important;
+  }
   .logo {
     margin-left: 0;
     font-size: 16px;
   }
-  .account {
-    font-size: 12px;
-  }
-  .nav-menu{
-    font-size: 12px;
-  }
+  
   .nav-menu li + li {
     margin-left: 20px;
   }
   .hero{
-    margin-top: 23%;
+    margin-top: 20%;
     font-size: 20px;
   }
 
@@ -231,9 +315,7 @@ aside h2 a:hover {
     font-size: 14px;
   }
   aside {
-    width: 50%;
-    margin-left: 10%;
-    margin-top: 0;
+    display: none;
   }
   .text {
     flex-direction: column;

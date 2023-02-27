@@ -16,7 +16,7 @@
 	******/
 }
 .loaded_hiding .center-body {
-	transition: 6s opacity linear;
+	transition: 1s opacity linear;
 	opacity: 0;
 }
 

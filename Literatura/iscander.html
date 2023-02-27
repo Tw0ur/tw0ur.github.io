@@ -5,34 +5,61 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Искандер</title>
-  <link rel="stylesheet" href="/preloader.css">
-  <link rel="stylesheet" href="masgut-iscander.css">
+  <link rel="stylesheet" href="/preloader/css-loader-4.css">
+  <link rel="stylesheet" href="/Literatura/life.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="/footer.css">
 </head>
 <body>
+
+  <div class="center-body">
+    <div class="loader-triangle-7">
+      <svg width="56px" height="50px" viewBox="0 0 226 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+          <linearGradient x1="114.720775%" y1="181.283245%" x2="39.5399306%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#fff" offset="0%"></stop>
+            <stop stop-color="#bbb" offset="100%"></stop>
+          </linearGradient>
+        </defs>
+        <g id="Page-1" stroke="none" stroke-width="2" fill="none" fill-rule="evenodd">
+        <g id="Artboard" fill-rule="nonzero" stroke="url(#linearGradient-1)" stroke-width="10">
+          <g id="white-bg-logo">
+            <path d="M113,5.08219117 L4.28393801,197.5 L221.716062,197.5 L113,5.08219117 Z" id="Triangle-3-Copy"></path>
+          </g>
+        </g>
+      </g>
+      </svg>
+    </div>
+    </div>
+
+
+
   <header class="header">
     <nav class ="nav">
      <div class="container-wide">
        <div class="header__inner space-between">
          <a href="/Project 1/project.html" class="logo" target="_ blank">A.R.I.M.A^2.
          </a>
-         <div class="nav-menu"> 
-           <ul> 
-             <li><a href="/index.html"class="nav_link" target="_ blank">Главная</a></li>  
-             <li><a href="#" class="nav_link" target="_ blank">Сайт</a></li>  
-             <li><a href="https://arima.pythonanywhere.com/" class="nav_link" target="_ blank">Приложение</a></li>
-           </ul>
-         </div>
-         <a href="#" class="account">gfdgdgd</a>
-       </a>
+         <nav class="nav-menu"> 
+          <ul> 
+            <li><a href="/index.html" class="nav_link">Главная страница</a></li>   
+            <li><a href="#" class="nav_link">Сайт</a></li> 
+            <li><a href="https://arima.pythonanywhere.com/" class="nav_link">Приложение</a>
+            </li>
+          </ul>
+
+          <div class="icon">
+           <i class="fa fa-bars" id="one"></i>
+           <i class="fas fa-times"id="two"></i>
+          </div>
+         </nav>
      </div>
     </nav>
+    <h1 class="hero">Поэма "Искандер"</h1>
   </header>
 
-  <div class="intro">
-    <div class="container">
-      <div class="text">
+  <div class="text">
+    <div class="content-area" style="text-align: center;font-size: 25px;">
         <h1>Искандер</h1>
 
         <p>Вот сын Филиппа Искандер,<br>
@@ -249,14 +276,53 @@
           
           <p><b>1889<br>
           Перевод Е.Винокурова</b></p>
-          <div class="links">
-            <a href="masgut.html" target="_ blank">Поэма "Масгуд"</a>
-            <a href="" target="_ blank">Стихи</a>
-            <a href="https://arima.pythonanywhere.com/woe/" target="_ blank">Слова назидания</a>
-          </div>
-      </div>
+          
+      
     </div>
+    <aside  role="complementary">
+      <section>
+        <div >
+          <ul >
+            <li>
+              <a href="/index.html">Главная страница</a>
+            </li>
+            <li>
+              <a href="#">Приложение</a>
+            </li>
+            <li>
+              <a href="">Сайт</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    <section >
+      <h2 ><a href="/Literatura/lifeabay.html">Жизнь Абая</a></>
+    </section>
+      <section >
+        <h2 >Творчество Абая</h2>
+        <div >
+          <ul>
+            <li >
+              <a href="">Стихи Абая</a>
+            </li>
+            <li>
+              <a href="/Literatura/masgut.html">Поэма "Масгуд"</a>
+            </li>
+            <li>
+              <a href="/Literatura/iscander.html">Поэма "Искандер"</a>
+            </li>
+            <li class="">
+              <a href="">Слова назидания</a>
+            </li>
+          </ul>
+        </div>
+    </section>
+    <section><h2><a href="#"> Абаеведение </a></h2>
+    </section></aside>
   </div>
+
+
+  
 
   <footer class="footer">
     <div class="footer-container">
@@ -292,6 +358,35 @@
       </div>
     </div>
  </footer>
-  
+ <script>
+  window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 1500);
+  }
+</script>
+
+ <script>
+  const icon = document.querySelector('.icon')
+  const nav = document.querySelector('.nav-menu')
+  var count = 1;
+
+  icon.addEventListener('click', () => {
+    icon.classList.toggle('close')
+    nav.classList.toggle('show')
+    count++
+
+    if(count % 2 == 0) {
+      document.getElementById('one').style.display = 'none'
+      document.getElementById('two').style.display = 'block'
+    }
+    else {
+      document.getElementById('one').style.display = 'block'
+      document.getElementById('two').style.display = 'none'
+    }
+  })
+</script>
 </body>
 </html>
