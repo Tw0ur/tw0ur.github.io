@@ -214,10 +214,6 @@ h1 {
   .container-wide{
     position: absolute; right: 0px;left:0; z-index: 1000;
   }
-  
-  .text{
-    
-  }
 }
 
 @media screen and (max-width:767px) {
