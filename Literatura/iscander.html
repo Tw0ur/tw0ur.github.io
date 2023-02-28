@@ -38,12 +38,12 @@
     <nav class ="nav">
      <div class="container-wide">
        <div class="header__inner space-between">
-         <a href="/Project 1/project.html" class="logo" target="_ blank">A.R.I.M.A^2.
+         <a href="/Project 1/project.html" class="logo" id="logo" target="_ blank">A.R.I.M.A^2.
          </a>
          <nav class="nav-menu"> 
           <ul> 
             <li><a href="/index.html" class="nav_link">Главная страница</a></li>   
-            <li><a href="#" class="nav_link">Сайт</a></li> 
+            <li><a href="/Абай сайт/Главная.html" class="nav_link">Сайт</a></li> 
             <li><a href="https://arima.pythonanywhere.com/" class="nav_link">Приложение</a>
             </li>
           </ul>
@@ -59,7 +59,7 @@
   </header>
 
   <div class="text">
-    <div class="content-area" style="text-align: center;font-size: 25px;">
+    <div class="content-area" style="text-align: center;">
         <h1>Искандер</h1>
 
         <p>Вот сын Филиппа Искандер,<br>
@@ -276,11 +276,6 @@
           
           <p><b>1889<br>
           Перевод Е.Винокурова</b></p>
-          <div class="links">
-            <a href="masgut.html" target="_ blank">Поэма "Масгуд"</a>
-            <a href="" target="_ blank">Стихи</a>
-            <a href="https://arima.pythonanywhere.com/woe/" target="_ blank">Слова назидания</a>
-          </div>
       </div>
     </div>
     <aside  role="complementary">
@@ -291,10 +286,10 @@
               <a href="/index.html">Главная страница</a>
             </li>
             <li>
-              <a href="#">Приложение</a>
+              <a href="https://arima.pythonanywhere.com/">Приложение</a>
             </li>
             <li>
-              <a href="">Сайт</a>
+              <a href="/Абай сайт/Главная.html">Сайт</a>
             </li>
           </ul>
         </div>
@@ -307,7 +302,7 @@
         <div >
           <ul>
             <li >
-              <a href="">Стихи Абая</a>
+              <a href="/Literatura/poem.html">Стихи Абая</a>
             </li>
             <li>
               <a href="/Literatura/masgut.html">Поэма "Масгуд"</a>
@@ -316,12 +311,12 @@
               <a href="/Literatura/iscander.html">Поэма "Искандер"</a>
             </li>
             <li class="">
-              <a href="">Слова назидания</a>
+              <a href="https://arima.pythonanywhere.com/">Слова назидания</a>
             </li>
           </ul>
         </div>
     </section>
-    <section><h2><a href="#"> Абаеведение </a></h2>
+    <section><h2><a href="/Literatura/life.html"> Абаеведение </a></h2>
     </section></aside>
   </div>
 
@@ -340,6 +335,7 @@
             <li><a href="/index.html">Главная</a></li>
             <li><a href="https://arima.pythonanywhere.com/">Приложение</a></li>
             <li><a href="/Project 1/project.html">О команде</a></li>
+            <li><a href="/Абай сайт/Главная.html">Сайт</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -372,25 +368,27 @@
   }
 </script>
 
- <script>
-  const icon = document.querySelector('.icon')
-  const nav = document.querySelector('.nav-menu')
-  var count = 1;
+<script>
+const icon = document.querySelector('.icon')
+const nav = document.querySelector('.nav-menu')
+var count = 1;
 
-  icon.addEventListener('click', () => {
-    icon.classList.toggle('close')
-    nav.classList.toggle('show')
-    count++
+icon.addEventListener('click', () => {
+  icon.classList.toggle('close')
+  nav.classList.toggle('show')
+  count++
 
-    if(count % 2 == 0) {
-      document.getElementById('one').style.display = 'none'
-      document.getElementById('two').style.display = 'block'
-    }
-    else {
-      document.getElementById('one').style.display = 'block'
-      document.getElementById('two').style.display = 'none'
-    }
-  })
+  if(count % 2 == 0) {
+    document.getElementById('one').style.display = 'none'
+    document.getElementById('two').style.display = 'block'
+    document.getElementById('logo').style = 'opacity:0;pointer-events: none;'
+  }
+  else {
+    document.getElementById('one').style.display = 'block'
+    document.getElementById('two').style.display = 'none'
+    document.getElementById('logo').style = 'opacity:1; pointer-events: all;'
+  }
+})
 </script>
 </body>
 </html>

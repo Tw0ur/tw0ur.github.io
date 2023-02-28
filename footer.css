@@ -169,10 +169,32 @@ ul{
   }
   .footer-col{
     
-    width: 25%;
+    width: 40%;
     margin-bottom: 30px;
+}
+.footer { 
+  text-align: center;
+}
+.footer-col h4::before {
+  width: 100% !important;
+  max-width: 40% !important;
+  margin: 0 30% !important;
 }
 .footer-col:last-child{
   width: 25%;
+}
+}
+@media screen and (max-width:574px) {
+  .footer-col{
+    
+    width: 100% !important;
+    margin-bottom: 30px;
+}
+.footer-col h4::before {
+  max-width: 30% !important;
+  margin: 0 35% !important;
+}
+.social-links a:last-child{
+  margin-right: 0;
 }
 }

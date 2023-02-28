@@ -221,8 +221,10 @@ aside h2 a:hover {
     display: none !important;
   }
   .logo {
+    transition: 0.5s ease;
     margin-left: 5%;
     font-size: 18px;
+    opacity: 1 !important;
   }
   .account {
     font-size: 16px;
@@ -251,6 +253,9 @@ aside h2 a:hover {
 
 }
 @media screen and (max-width:573px) {
+  body {
+    background-position: 100vw auto !important;
+  }
   .nav-menu {
     font-size: 12px;
     position: relative;
@@ -261,7 +266,6 @@ aside h2 a:hover {
      padding: 0%;
      overflow: hidden;
      opacity: 0;
-     box-shadow: -7px 9px 17px 0 #00000017;
      width: 0;
      align-items: center;
      pointer-events: none;
@@ -270,7 +274,7 @@ aside h2 a:hover {
   }
    .nav-menu.show ul {
     width: 250px;
-    transform: translateX(-60px);
+    transform: translateX(-40px);
     opacity: 1;
     align-items: center;
     pointer-events: all;
@@ -288,7 +292,6 @@ aside h2 a:hover {
     justify-content: center;
     cursor: pointer;
     z-index: 10;
-    
     transition: 0.5s ease;
   }
   .fa-bars{
@@ -298,6 +301,7 @@ aside h2 a:hover {
     display: none !important;
   }
   .logo {
+    transition: 0.5s ease;
     margin-left: 0;
     font-size: 16px;
   }
@@ -306,7 +310,7 @@ aside h2 a:hover {
     margin-left: 20px;
   }
   .hero{
-    margin-top: 20%;
+    margin-top: 15%;
     font-size: 20px;
   }
 

@@ -38,12 +38,12 @@
     <nav class ="nav">
      <div class="container-wide">
        <div class="header__inner space-between">
-         <a href="/Project 1/project.html" class="logo">A.R.I.M.A^2.
+         <a href="/Project 1/project.html" id="logo" target="_blank" class="logo">A.R.I.M.A^2.
          </a>
          <nav class="nav-menu"> 
            <ul> 
              <li><a href="/index.html" class="nav_link">Главная страница</a></li>   
-             <li><a href="#" class="nav_link">Сайт</a></li> 
+             <li><a href="/Абай сайт/Главная.html" class="nav_link">Сайт</a></li> 
              <li><a href="https://arima.pythonanywhere.com/" class="nav_link">Приложение</a>
              </li>
            </ul>
@@ -162,7 +162,7 @@
               <a href="https://arima.pythonanywhere.com/">Приложение</a>
             </li>
             <li>
-              <a href="">Сайт</a>
+              <a href="/Абай сайт/Главная.html">Сайт</a>
             </li>
           </ul>
         </div>
@@ -184,7 +184,7 @@
               <a href="/Literatura/iscander.html">Поэма "Искандер"</a>
             </li>
             <li class="">
-              <a href="">Слова назидания</a>
+              <a href="https://arima.pythonanywhere.com/">Слова назидания</a>
             </li>
           </ul>
         </div>
@@ -205,6 +205,7 @@
               <li><a href="/index.html">Главная</a></li>
               <li><a href="https://arima.pythonanywhere.com/">Приложение</a></li>
               <li><a href="/Project 1/project.html">О команде</a></li>
+              <li><a href="/Абай сайт/Главная.html">Сайт</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -241,19 +242,21 @@
       const icon = document.querySelector('.icon')
       const nav = document.querySelector('.nav-menu')
       var count = 1;
-  
+    
       icon.addEventListener('click', () => {
         icon.classList.toggle('close')
         nav.classList.toggle('show')
         count++
-  
+    
         if(count % 2 == 0) {
           document.getElementById('one').style.display = 'none'
           document.getElementById('two').style.display = 'block'
+          document.getElementById('logo').style = 'opacity:0;pointer-events: none;'
         }
         else {
           document.getElementById('one').style.display = 'block'
           document.getElementById('two').style.display = 'none'
+          document.getElementById('logo').style = 'opacity:1; pointer-events: all;'
         }
       })
     </script>
