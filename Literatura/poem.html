@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/preloader.css">
-  <link rel="stylesheet" href="poem.css">
+  <link rel="stylesheet" href="/Literatura/life.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="/footer.css">
   <title>Стихи</title>
@@ -15,24 +15,29 @@
     <nav class ="nav">
      <div class="container-wide">
        <div class="header__inner space-between">
-         <a href="/Project 1/project.html" class="logo" target="_ blank">A.R.I.M.A^2.
+         <a href="/Project 1/project.html" class="logo" id = "logo" target="_ blank">A.R.I.M.A^2.
          </a>
-         <div class="nav-menu"> 
+         <nav class="nav-menu"> 
            <ul> 
              <li><a href="/index.html"class="nav_link" target="_ blank">Главная</a></li>  
              <li><a href="/Абай сайт/Главная.html" class="nav_link" target="_ blank">Сайт</a></li>  
              <li><a href="https://arima.pythonanywhere.com/" class="nav_link" target="_ blank"> Приложение</a></li>
            </ul>
-         </div>
-         <a href="#" class="account">gfdgdgd</a>
-       </a>
+
+           <div class="icon">
+            <i class="fa fa-bars" id="one"></i>
+            <i class="fas fa-times"id="two"></i>
+           </div>
+          </nav>
+          </nav>
+         
      </div>
     </nav>
+    <h1 class="hero">Стихи Абая</h1>
   </header>
 
-  <div class="intro">
-    <div class="container">
-      <div class="text">
+  <div class="text" style = "margin-bottom: 5%;">
+    <div class="content-area" style="text-align: center;">
         <h3>
           <a name="_Toc94086763"></a>
           «Я презрел познанье, юноша пустой…»
@@ -706,8 +711,50 @@
       Болтунов всесильных рать?<br/>
       Что за публика такая –<br/>
       Только знают врать и врать.<br/>
-      </div>
+      
     </div>
+    <aside  role="complementary">
+      <section>
+        <div >
+          <ul >
+            <li>
+              <a href="/index.html">Главная страница</a>
+            </li>
+            <li>
+              <a href="https://arima.pythonanywhere.com/">Приложение</a>
+            </li>
+            <li>
+              <a href="/Абай сайт/Главная.html">Сайт</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    <section >
+      <h2 ><a href="#">Жизнь Абая</a></s>
+    </section>
+      <section >
+        <h2 >Творчество Абая</h2>
+        <div >
+          <ul>
+            <li >
+              <a href="poem.html">Стихи Абая</a>
+            </li>
+            <li>
+              <a href="/Literatura/masgut.html">Поэма "Масгуд"</a>
+            </li>
+            <li>
+              <a href="/Literatura/iscander.html">Поэма "Искандер"</a>
+            </li>
+            <li class="">
+              <a href="https://arima.pythonanywhere.com/">Слова назидания</a>
+            </li>
+          </ul>
+        </div>
+    </section>
+    <section><h2><a href="/Literatura/life.html"> Абаеведение </a></h2>
+    </section></aside>
+    
+    
   </div>
 
   <footer class="footer">
@@ -745,5 +792,27 @@
       </div>
     </div>
  </footer>
+ <script>
+  const icon = document.querySelector('.icon')
+  const nav = document.querySelector('.nav-menu')
+  var count = 1;
+
+  icon.addEventListener('click', () => {
+    icon.classList.toggle('close')
+    nav.classList.toggle('show')
+    count++
+
+    if(count % 2 == 0) {
+      document.getElementById('one').style.display = 'none'
+      document.getElementById('two').style.display = 'block'
+      document.getElementById('logo').style = 'opacity:0;pointer-events: none;'
+    }
+    else {
+      document.getElementById('one').style.display = 'block'
+      document.getElementById('two').style.display = 'none'
+      document.getElementById('logo').style = 'opacity:1; pointer-events: all;'
+    }
+  })
+</script>
   </body>
 </html>
